@@ -1,4 +1,4 @@
-const BASE_URL = "https://social-media-backend-oimy.onrender.com/";
+const BASE_URL = "https://social-media-backend-oimy.onrender.com";
 
 export async function getPosts() {
   const res = await fetch(`${BASE_URL}/posts`);
