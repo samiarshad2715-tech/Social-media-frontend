@@ -2,21 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Create Post</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
+
 <body>
 
-  <h1>Create Post</h1>
-  <a href="index.html">Go to Feed</a>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
 
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-camera-retro"></i>
+      SamiSocial
+    </div>
+
+    <a href="index.html" class="create-btn">
+      <i class="fa-solid fa-house"></i>
+      Back to Feed
+    </a>
+  </nav>
+
+  <!-- Create Section -->
+  <section class="hero">
+    <h1>Create a Post 🚀</h1>
+    <p>Share your best moments with everyone.</p>
+  </section>
+
+  <!-- Form -->
   <form id="form">
-    <input type="file" name="image" required />
-    <input type="text" name="caption" placeholder="Enter caption" required />
-    <button type="submit">Upload</button>
+
+    <label class="upload-box">
+      <i class="fa-solid fa-image"></i>
+      <span>Choose an Image</span>
+      <input type="file" name="image" required />
+    </label>
+
+    <input 
+      type="text"
+      name="caption"
+      placeholder="Write a cool caption..."
+      required
+    />
+
+    <button type="submit">
+      <i class="fa-solid fa-upload"></i>
+      Upload Post
+    </button>
+
   </form>
 
-  <script type="module" src="js/createPost.js"></script>
+  <script type="module" src="./js/createPost.js"></script>
+
 </body>
 </html>
