@@ -2,17 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Feed</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Feed</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
+
 <body>
 
-  <h1>📸 Post Feed</h1>
-  <a href="create.html">Create Post</a>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
 
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-camera-retro"></i>
+      SamiSocial
+    </div>
+
+    <a href="create.html" class="create-btn">
+      <i class="fa-solid fa-plus"></i>
+      Create Post
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Share Your Moments ✨</h1>
+    <p>Upload memories, photos and vibes with the world.</p>
+  </section>
+
+  <!-- Feed -->
   <div id="posts"></div>
 
-  <script type="module" src="js/feed.js"></script>
+  <script type="module" src="./js/feed.js"></script>
 </body>
 </html>
